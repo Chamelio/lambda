@@ -76,8 +76,48 @@ Runtime:  Node.js (latest LTS)
 Permissions: Create new role (basic Lambda)
 
 ✍️ Task 6 — Add Node.js Code 
+Use this code: https://github.com/BalericaAI/lambda/blob/main/lessonb/lambda/Node.js
+
+💾 Click Deploy
+
+▶️ Task 7 — Test Node Lambda
+
+Test event:
+
+        {
+          "queryStringParameters": {
+            "name": "Malgus"
+          }
+        }
+
+✅ Expected Result  "HELLO MALGUS FROM NODE!"
 
 
+🔍 Task 8 — Verify Node Logs
 
+You must:
 
+    Navigate to CloudWatch
+    Find correct log group
+    Identify:
+        incoming event
+        response
 
+🧠 Checkpoint — Student Must Explain
+Before moving on, pause them here.
+
+You must answer:
+
+1. What triggered the Lambda?
+2. What is event?
+3. Where do logs go?
+4. What would break if IAM role was missing?
+5. Difference between Python and Node?
+
+NOTE:
+
+“If you cannot find your logs, your function does not exist.”
+
+“If you cannot explain the event structure, you are not ready for API Gateway.”
+
+“Lambda is easy. Observability is the skill.”
