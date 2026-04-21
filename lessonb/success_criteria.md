@@ -20,3 +20,8 @@ Functional Criteria (Must Work)
           uppercase greeting
 
 
+Verification Commands (Required)
+
+    curl "<api-url>/python?name=Chewbacca"
+    curl "<api-url>/node?name=Malgus"
+
